@@ -21,9 +21,10 @@ while playGame:
   print('rock, paper or scissors?')
   player1 = input()
   outcome = rockPaperScissors(player1)
-  record = open('rpc-outcomes.txt', 'a')
-  record.write(outcome + '\n')
-  record.close()
+  # To save a record of the outcomes, uncomment the 3 lines below
+  # record = open('rpc-outcomes.txt', 'a')
+  # record.write(outcome + '\n')
+  # record.close()
   print(outcome)
 
   if outcome != 'STALEMATE, PLAY AGAIN!':
